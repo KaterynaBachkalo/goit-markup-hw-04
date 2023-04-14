@@ -66,6 +66,9 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 ul,
 p {
     margin: 0;
@@ -188,8 +191,17 @@ img {
   |============================
 */
 .hero-section {
-    background: var(--navi-blue-color);
+    /* background: var(--navi-blue-color); */
     padding: 188px 0;
+
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-color: rgba(46, 47, 66, 0.7);
+    max-width: 1440px;
+    height: 600px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -234,6 +246,7 @@ img {
   | Features
   |============================
 */
+
 .feature-list {
     display: flex;
     gap: var(--gap-between-column);
@@ -241,6 +254,12 @@ img {
 
 .feature-item {
     width: calc((100% - 3*24px)/4);
+}
+
+.feature-icon {
+    background-color: var(--cloud-color);
+    border-radius: 4px;
+    padding: 24px 100px;
 
 }
 
@@ -314,10 +333,68 @@ img {
 
 .team-text {
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-section {
     padding: 120px 0;
+}
+
+.social-icon-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--iris-color);
+    border-radius: 50%;
+    color: var(--cloud-color);
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+    background-color: var(--ocean-color);
+}
+
+.social-icons {
+    fill: currentColor;
+}
+
+/**
+  |============================
+  | customers
+  |============================
+*/
+.clients-icon-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.clients-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    fill: var(--light-slate-color);
+    border: 1px solid var(--light-slate-color);
+    border-radius: 4px;
+}
+
+.clients-icon-link:hover,
+.clients-icon-link:focus {
+    fill: var(--ocean-color);
+    border: 1px solid var(--ocean-color);
+
 }
 
 /**
@@ -336,12 +413,46 @@ img {
 
 .footer .logo.link {
     display: inline-block;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .footer-text {
     color: var(--cornflower-color);
-    width: 25%;
+}
+
+.footer-container {
+    display: flex;
+    padding-top: 100px;
+}
+
+.footer-wrap {
+    width: 264px;
+    margin-right: 120px;
+}
+
+.social-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+
+    color: var(--white-txt-color);
+}
+
+.media-icon {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.media-icon:hover,
+.media-icon:focus {
+    background: var(--green-color);
+}
+
+.media-icon-list {
+    gap: 16px;
 }
 
 /**
@@ -419,4 +530,10 @@ img {
 
 .card-section {
     padding: 96px 120px;
+}
+
+.card-link:hover,
+.card-link:focus {
+    border: 1px solid var(--cloud-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
