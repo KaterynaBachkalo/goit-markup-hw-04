@@ -377,7 +377,7 @@ img {
   |============================
 */
 .customers-section .section-title {
-    line-height: 1.11;
+    line-height: 1.1;
 }
 
 .clients-icon-list {
@@ -455,7 +455,7 @@ img {
 }
 
 .media-icon-link {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--iris-color);
     color: var(--cloud-color);
 }
 
